@@ -1,0 +1,29 @@
+{
+  "name": "implement_stablecoin",
+  "version": "1.0.0",
+  "description": "Solidity Exercise //Components of this erc20 stablecoin - FUN Users have to deposit collateral (ethers). Two roles in this smart contract - (role 1) deposit ETH to get stablecoins (role 2) Deposit eth only and get membership-coins for stake in smart contract's ether pool (leveraged ethers)  Since price of ether may not always be increasing, and there may not be enough people who want leveraged ethers, this smart contract charges fee for getitng/redeeming stablecoins. If ether price drops that ether pool is worth less than stablecoins value - disable redemption, destroy all membership-coins. New users would be incenticized to deposit ether to pool so as to have greater stake in pool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuckyPoodle/cuteStableCoin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuckyPoodle/cuteStableCoin/issues"
+  },
+  "homepage": "https://github.com/LuckyPoodle/cuteStableCoin#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.7",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.2"
+  }
+}
